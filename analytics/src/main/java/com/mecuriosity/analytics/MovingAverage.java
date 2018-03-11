@@ -13,6 +13,10 @@ public class MovingAverage {
 		this.periods = periods;
 	}
 	
+	public void runObjectTest(){
+		System.out.println("I am running from Moving Average");
+	}
+	
 	public List<Double> calculateAndGetMovingAverage(){
 		calculateMovingAverage();
 		return movingAverageSeries;
