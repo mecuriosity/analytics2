@@ -17,11 +17,6 @@ public class MovingAverage {
 		this.periods = periods;
 	}
 	
-	public void setDataAsFloat(List<Float> rawSeriesFloat, int periods){
-		this.rawSeries = (List<Double>) rawSeries;
-		this.periods = periods;
-	}
-	
 	public List<Double> calculateAndGetMovingAverage(){
 		calculateMovingAverage();
 		return movingAverageSeries;
