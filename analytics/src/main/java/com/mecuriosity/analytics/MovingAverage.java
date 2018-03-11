@@ -8,13 +8,13 @@ public class MovingAverage {
 	private List<Double> movingAverageSeries;
 	private int periods;
 	
-	public MovingAverage(List<Double> rawSeries, int periods) {
-		this.rawSeries = rawSeries;
-		this.periods = periods;
-	}
-	
 	public void runObjectTest(){
 		System.out.println("I am running from Moving Average");
+	}
+	
+	public void setData(List<Double> rawSeries, int periods){
+		this.rawSeries = rawSeries;
+		this.periods = periods;
 	}
 	
 	public List<Double> calculateAndGetMovingAverage(){

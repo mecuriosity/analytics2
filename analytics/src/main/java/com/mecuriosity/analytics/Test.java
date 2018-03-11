@@ -14,7 +14,8 @@ public class Test {
 		//createRandomData();
 		//testMovingAverage();
 		//writeRawAndResult();
-		MovingAverage ma = new MovingAverage(testData, 3);
+		MovingAverage ma = new MovingAverage();
+		ma.setData(testData, 3);
 		testObjectParse(ma, "runObjectTest");
 
 	}
@@ -26,7 +27,8 @@ public class Test {
 	}
 	
 	private static void testMovingAverage(){
-		MovingAverage ma = new MovingAverage(testData, 3);
+		MovingAverage ma = new MovingAverage();
+		ma.setData(testData, 3);
 		testResult = ma.calculateAndGetMovingAverage();
 	}
 	
